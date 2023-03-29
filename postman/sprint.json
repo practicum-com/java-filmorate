@@ -31,7 +31,7 @@
 									"pm.test(\"Test user 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData).to.have.property('email');\r",
-									"    pm.expect(jsonData.email, '\"email\" must be \"mail@mail.ru\"').to.eql('mail@mail.ru');\r",
+									"    pm.expect(jsonData.email, '\"email\" must be \"mail@mail.com\"').to.eql('mail@mail.com');\r",
 									"});\r",
 									"pm.test(\"Test user 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -67,7 +67,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"login\": \"dolore\",\n  \"name\": \"Nick Name\",\n  \"email\": \"mail@mail.ru\",\n  \"birthday\": \"1946-08-20\"\n}",
+							"raw": "{\n  \"login\": \"dolore\",\n  \"name\": \"Nick Name\",\n  \"email\": \"mail@mail.com\",\n  \"birthday\": \"1946-08-20\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -120,7 +120,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"login\": \"dolore ullamco\",\n  \"email\": \"yandex@mail.ru\",\n  \"birthday\": \"2446-08-20\"\n}",
+							"raw": "{\n  \"login\": \"dolore ullamco\",\n  \"email\": \"bing@mail.com\",\n  \"birthday\": \"2446-08-20\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -172,7 +172,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"login\": \"dolore ullamco\",\n  \"name\": \"\",\n  \"email\": \"mail.ru\",\n  \"birthday\": \"1980-08-20\"\n}",
+							"raw": "{\n  \"login\": \"dolore ullamco\",\n  \"name\": \"\",\n  \"email\": \"mail.com\",\n  \"birthday\": \"1980-08-20\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -224,7 +224,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"login\": \"dolore\",\n  \"name\": \"\",\n  \"email\": \"test@mail.ru\",\n  \"birthday\": \"2446-08-20\"\n}",
+							"raw": "{\n  \"login\": \"dolore\",\n  \"name\": \"\",\n  \"email\": \"test@mail.com\",\n  \"birthday\": \"2446-08-20\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -265,7 +265,7 @@
 									"pm.test(\"Test user 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData).to.have.property('email');\r",
-									"    pm.expect(jsonData.email, '\"email\" must be \"mail@yandex.ru\"').to.eql('mail@yandex.ru');\r",
+									"    pm.expect(jsonData.email, '\"email\" must be \"mail@bing.com\"').to.eql('mail@bing.com');\r",
 									"});\r",
 									"pm.test(\"Test user 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -301,7 +301,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"login\": \"doloreUpdate\",\n  \"name\": \"est adipisicing\",\n  \"id\": 1,\n  \"email\": \"mail@yandex.ru\",\n  \"birthday\": \"1976-09-20\"\n}",
+							"raw": "{\n  \"login\": \"doloreUpdate\",\n  \"name\": \"est adipisicing\",\n  \"id\": 1,\n  \"email\": \"mail@bing.com\",\n  \"birthday\": \"1976-09-20\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -353,7 +353,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"login\": \"doloreUpdate\",\n  \"name\": \"est adipisicing\",\n  \"id\": 9999,\n  \"email\": \"mail@yandex.ru\",\n  \"birthday\": \"1976-09-20\"\n}",
+							"raw": "{\n  \"login\": \"doloreUpdate\",\n  \"name\": \"est adipisicing\",\n  \"id\": 9999,\n  \"email\": \"mail@bing.com\",\n  \"birthday\": \"1976-09-20\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -396,7 +396,7 @@
 									"pm.test(\"Test user[0] 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData[0]).to.have.property('email');\r",
-									"    pm.expect(jsonData[0].email, '\"email\" must be \"mail@yandex.ru\"').to.eql('mail@yandex.ru');\r",
+									"    pm.expect(jsonData[0].email, '\"email\" must be \"mail@bing.com\"').to.eql('mail@bing.com');\r",
 									"});\r",
 									"pm.test(\"Test user[0] 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -467,7 +467,7 @@
 									"pm.test(\"Test user 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData).to.have.property('email');\r",
-									"    pm.expect(jsonData.email, '\"email\" must be \"friend@mail.ru\"').to.eql('friend@mail.ru');\r",
+									"    pm.expect(jsonData.email, '\"email\" must be \"friend@mail.com\"').to.eql('friend@mail.com');\r",
 									"});\r",
 									"pm.test(\"Test user 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -503,7 +503,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"login\": \"friend\",\n  \"name\": \"friend adipisicing\",\n  \"email\": \"friend@mail.ru\",\n  \"birthday\": \"1976-08-20\"\n}",
+							"raw": "{\n  \"login\": \"friend\",\n  \"name\": \"friend adipisicing\",\n  \"email\": \"friend@mail.com\",\n  \"birthday\": \"1976-08-20\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -544,7 +544,7 @@
 									"pm.test(\"Test user 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData).to.have.property('email');\r",
-									"    pm.expect(jsonData.email, '\"email\" must be \"friend@common.ru\"').to.eql('friend@common.ru');\r",
+									"    pm.expect(jsonData.email, '\"email\" must be \"friend@common.com\"').to.eql('friend@common.com');\r",
 									"});\r",
 									"pm.test(\"Test user 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -581,7 +581,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"login\": \"common\",\n  \"name\": \"\",\n  \"email\": \"friend@common.ru\",\n  \"birthday\": \"2000-08-20\"\n}",
+							"raw": "{\n  \"login\": \"common\",\n  \"name\": \"\",\n  \"email\": \"friend@common.com\",\n  \"birthday\": \"2000-08-20\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -622,7 +622,7 @@
 									"pm.test(\"Test user 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData).to.have.property('email');\r",
-									"    pm.expect(jsonData.email, '\"email\" must be \"mail@yandex.ru\"').to.eql('mail@yandex.ru');\r",
+									"    pm.expect(jsonData.email, '\"email\" must be \"mail@bing.com\"').to.eql('mail@bing.com');\r",
 									"});\r",
 									"pm.test(\"Test user 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -737,7 +737,7 @@
 									"pm.test(\"Test user 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData).to.have.property('email');\r",
-									"    pm.expect(jsonData.email, '\"email\" must be \"friend@mail.ru\"').to.eql('friend@mail.ru');\r",
+									"    pm.expect(jsonData.email, '\"email\" must be \"friend@mail.com\"').to.eql('friend@mail.com');\r",
 									"});\r",
 									"pm.test(\"Test user 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -977,7 +977,7 @@
 									"pm.test(\"Test friend[0] 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData[0]).to.have.property('email');\r",
-									"    pm.expect(jsonData[0].email, '\"email\" must be \"friend@mail.ru\"').to.eql('friend@mail.ru');\r",
+									"    pm.expect(jsonData[0].email, '\"email\" must be \"friend@mail.com\"').to.eql('friend@mail.com');\r",
 									"});\r",
 									"pm.test(\"Test friend[0] 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -1054,7 +1054,7 @@
 									"pm.test(\"Test friend[0] 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData[0]).to.have.property('email');\r",
-									"    pm.expect(jsonData[0].email, '\"email\" must be \"mail@yandex.ru\"').to.eql('mail@yandex.ru');\r",
+									"    pm.expect(jsonData[0].email, '\"email\" must be \"mail@bing.com\"').to.eql('mail@bing.com');\r",
 									"});\r",
 									"pm.test(\"Test friend[0] 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -1237,7 +1237,7 @@
 									"pm.test(\"Test friend[0] 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData[0]).to.have.property('email');\r",
-									"    pm.expect(jsonData[0].email, '\"email\" must be \"friend@mail.ru\"').to.eql('friend@mail.ru');\r",
+									"    pm.expect(jsonData[0].email, '\"email\" must be \"friend@mail.com\"').to.eql('friend@mail.com');\r",
 									"});\r",
 									"pm.test(\"Test friend[0] 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -1263,7 +1263,7 @@
 									"pm.test(\"Test friend[1] 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData[1]).to.have.property('email');\r",
-									"    pm.expect(jsonData[1].email, '\"email\" must be \"friend@common.ru\"').to.eql('friend@common.ru');\r",
+									"    pm.expect(jsonData[1].email, '\"email\" must be \"friend@common.com\"').to.eql('friend@common.com');\r",
 									"});\r",
 									"pm.test(\"Test friend[1] 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -1390,7 +1390,7 @@
 									"pm.test(\"Test friend[0] 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData[0]).to.have.property('email');\r",
-									"    pm.expect(jsonData[0].email, '\"email\" must be \"mail@yandex.ru\"').to.eql('mail@yandex.ru');\r",
+									"    pm.expect(jsonData[0].email, '\"email\" must be \"mail@bing.com\"').to.eql('mail@bing.com');\r",
 									"});\r",
 									"pm.test(\"Test friend[0] 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -1416,7 +1416,7 @@
 									"pm.test(\"Test friend[1] 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData[1]).to.have.property('email');\r",
-									"    pm.expect(jsonData[1].email, '\"email\" must be \"friend@common.ru\"').to.eql('friend@common.ru');\r",
+									"    pm.expect(jsonData[1].email, '\"email\" must be \"friend@common.com\"').to.eql('friend@common.com');\r",
 									"});\r",
 									"pm.test(\"Test friend[1] 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -1493,7 +1493,7 @@
 									"pm.test(\"Test friend[0] 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData[0]).to.have.property('email');\r",
-									"    pm.expect(jsonData[0].email, '\"email\" must be \"friend@common.ru\"').to.eql('friend@common.ru');\r",
+									"    pm.expect(jsonData[0].email, '\"email\" must be \"friend@common.com\"').to.eql('friend@common.com');\r",
 									"});\r",
 									"pm.test(\"Test friend[0] 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -1626,7 +1626,7 @@
 									"pm.test(\"Test friend[0] 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData[0]).to.have.property('email');\r",
-									"    pm.expect(jsonData[0].email, '\"email\" must be \"friend@common.ru\"').to.eql('friend@common.ru');\r",
+									"    pm.expect(jsonData[0].email, '\"email\" must be \"friend@common.com\"').to.eql('friend@common.com');\r",
 									"});\r",
 									"pm.test(\"Test friend[0] 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
@@ -1709,7 +1709,7 @@
 									"pm.test(\"Test friend[0] 'email' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
 									"    pm.expect(jsonData[0]).to.have.property('email');\r",
-									"    pm.expect(jsonData[0].email, '\"email\" must be \"friend@common.ru\"').to.eql('friend@common.ru');\r",
+									"    pm.expect(jsonData[0].email, '\"email\" must be \"friend@common.com\"').to.eql('friend@common.com');\r",
 									"});\r",
 									"pm.test(\"Test friend[0] 'name' field\", function () {\r",
 									"    var jsonData = pm.response.json();\r",
